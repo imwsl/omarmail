@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omarmail</title>
+<meta name="description" content="Omarmail — a personal desktop email client for Omarchy, based on the open-source Omamail plugin.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <div class="name">Omarmail</div>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="#zh">中文</a>
+  </nav>
+</header>
+
+<section id="en">
+<h1>A personal desktop email client for Omarchy</h1>
+<p>Omarmail is a desktop email client that runs on the operator's own Linux computer
+(<a href="https://omarchy.org">Omarchy</a>). It is a personal instance of
+<a href="https://github.com/huacnlee/omamail">Omamail</a>, an open-source plugin released under the MIT License,
+and is operated by <strong>imwsl</strong> for their own Gmail account.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Reads, searches, labels, archives and replies to Gmail in a native desktop window.</li>
+  <li>Sends messages that the user writes.</li>
+  <li>Shows meeting invitations and the user's calendar, and lets the user answer invitations and create or update events.</li>
+</ul>
+
+<h2>Google data it uses</h2>
+<p>Omarmail signs in with Google OAuth and requests only these scopes:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/gmail.modify</code> — read messages and labels, change labels, archive, and move to trash (it cannot permanently delete mail).</li>
+  <li><code>https://www.googleapis.com/auth/gmail.send</code> — send messages the user composes.</li>
+  <li><code>https://www.googleapis.com/auth/calendar.events</code> — read calendar events and create or update events.</li>
+</ul>
+<p>All processing happens on the user's own computer. There is no Omarmail server: data travels only between
+that computer and Google's APIs. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+<p class="note">Omarmail is not affiliated with, endorsed by, or sponsored by Google.
+Gmail and Google Calendar are trademarks of Google LLC.</p>
+
+<p>Contact: <a href="mailto:yangjie6020@gmail.com">yangjie6020@gmail.com</a></p>
+</section>
+
+<section id="zh" class="lang" lang="zh-CN">
+<h1>一个自用的 Omarchy 桌面邮件客户端</h1>
+<p>Omarmail 是运行在使用者自己 Linux 电脑（<a href="https://omarchy.org">Omarchy</a>）上的桌面邮件客户端，是开源插件 <a href="https://github.com/huacnlee/omamail">Omamail</a>（MIT 许可证）的一个个人实例，由 <strong>imwsl</strong> 运营，供其本人的 Gmail 账号使用。</p>
+
+<h2>功能</h2>
+<ul>
+  <li>在原生桌面窗口中阅读、搜索、标记、归档和回复 Gmail 邮件。</li>
+  <li>发送用户自己撰写的邮件。</li>
+  <li>显示会议邀请和日历，允许用户回复邀请、创建或修改日程。</li>
+</ul>
+
+<h2>使用的 Google 数据</h2>
+<p>Omarmail 通过 Google OAuth 登录，只申请以下权限范围：</p>
+<ul>
+  <li><code>gmail.modify</code>：读取邮件和标签、修改标签、归档、移入垃圾箱（无法永久删除邮件）。</li>
+  <li><code>gmail.send</code>：发送用户撰写的邮件。</li>
+  <li><code>calendar.events</code>：读取日历事件，创建或修改事件。</li>
+</ul>
+<p>所有处理都在用户自己的电脑上完成。Omarmail 没有服务器，数据只在这台电脑和 Google API 之间传输。详见<a href="privacy.html#zh">隐私政策</a>。</p>
+
+<p class="note">Omarmail 与 Google 没有关联，也未获得 Google 的认可或赞助。Gmail 和 Google 日历是 Google LLC 的商标。</p>
+
+<p>联系方式：<a href="mailto:yangjie6020@gmail.com">yangjie6020@gmail.com</a></p>
+</section>
+
+<footer>© 2026 imwsl · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
